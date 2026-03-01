@@ -9,17 +9,15 @@
 <body>
     <div class="login-container">
         <h1>Login</h1>
-        <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $usuario = $_POST["usuario"];
-                $contrasena = $_POST["contrasena"];
-                
-            }
-        ?>
-        <form method="post" action="">
+
+        <?php if (!empty($error)): ?>
+            <div class="error"><?php echo $error; ?></div>
+        <?php endif; ?>
+
+        <form method="post">
             <input type="text" name="usuario" placeholder="Usuario" required>
             <input type="password" name="contrasena" placeholder="Contraseña" required>
-            <button type="submit">Enviar</button>
+            <button type="submit">Iniciar Sesión</button>
         </form>
     </div>
 </body>
