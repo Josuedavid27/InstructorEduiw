@@ -1,0 +1,19 @@
+#header{
+    background-color: #880808;
+    padding: 20px;
+    text-align: center;
+}
+
+#article1{
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 20px;
+}
+#article2{
+    background-color: #080606;
+    padding: 20px;
+    margin: 10px;
+    width: 20px;
+    height: 40px;
+    margin-left: 50px;
+}
